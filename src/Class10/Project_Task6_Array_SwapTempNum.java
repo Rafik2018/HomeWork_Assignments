@@ -19,5 +19,22 @@ public class Project_Task6_Array_SwapTempNum {
         for (int i : arr) {
             System.out.println(i);
         }
+
+        System.out.println("--------------------------------");
+
+
+        arr[0] += arr[1];
+        arr[1] = arr[0] - arr[1];
+        arr[0] -= arr[1];
+
+        int[] arr1 = {5, 10};
+        swapNumbers(arr);
+        for (int i : arr1) {
+            System.out.println(i);
+
+
+        }
+
     }
-}
+
+    }
