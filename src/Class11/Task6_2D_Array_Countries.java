@@ -15,6 +15,7 @@ public class Task6_2D_Array_Countries {
 
 
 
+
         String[][] countries = {
                 {"North America", "USA", "Canada", "Mexico"},
                 {"South America", "Brazil", "Argentina", "Colombia"},
@@ -36,6 +37,7 @@ public class Task6_2D_Array_Countries {
 
         System.out.println("Total number of countries: "+totalCountries);
 
+
 /*
 
 
@@ -55,9 +57,6 @@ public class Task6_2D_Array_Countries {
 
        }
 */
-
-
-
 
 
 
@@ -120,5 +119,5 @@ public class Task6_2D_Array_Countries {
         }
     }
 }*/
+        }
     }
-}
