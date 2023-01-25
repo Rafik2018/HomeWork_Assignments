@@ -7,6 +7,7 @@ public class Main {
 
 //   %d=for integers     %s=for Strings      %f=for float
 
+/*
 String name = "Rafik is %d years old";
 
         System.out.println(name.length());
@@ -26,4 +27,6 @@ String name = "Rafik is %d years old";
     }
 
 
+}*/
+    }
 }

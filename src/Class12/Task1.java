@@ -13,10 +13,10 @@ For Example String str=hello =>l
 
 
 */
-        String str = "World" ;
+        String str = "World";
 
        if (!str.isEmpty()) {
-            if (str.length() % 2 == 1 && str.length() >= 3) {
+            if (str.length() % 2==1 && str.length() >= 3) {
                 int middleIndex = str.length() / 2;
                 System.out.println(str.charAt(middleIndex));
             }
