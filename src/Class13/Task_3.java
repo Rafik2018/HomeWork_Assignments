@@ -12,12 +12,18 @@ public class Task_3 {
 
         String a = "Is is Saturday?  Is it raining? Do we have a Java class today?";
 
-        String [] aArr=a.split("[?]");
+        String[] aArr = a.split("[?]");
         System.out.println(aArr.length);
 
 
     }
+}
 
+   /* String b = "Is is Saturday?  Is it raining? Do we have a Java class today?";
 
+    String [] aArr1=b.split("[?]");
+        System.out.println(aArr1.length);
+        System.out.println(aArr1[2]);
 
 }
+*/

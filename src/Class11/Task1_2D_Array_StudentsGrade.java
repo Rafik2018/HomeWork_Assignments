@@ -8,7 +8,7 @@ public class Task1_2D_Array_StudentsGrade {
         that has A and B grade (edited)*/
 
 
-        String[][] students = {{"Tom", "David", "John", "Stive"},
+        String[][] students = {{"Tom", "David", "John", "Steve"},
                 {"A", "B", "C", "D"},};
 
 

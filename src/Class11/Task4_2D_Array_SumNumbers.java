@@ -22,32 +22,42 @@ public class Task4_2D_Array_SumNumbers {
         }
         System.out.println("The summary of all numbers is " + sum);
 
+
+
+
+
+        System.out.println("--------------------------------------");
+
+
+
+
+
+        int i=0;
+        int j=0;
+
+        while ( i<numbers.length){
+            while (j<numbers[i].length){
+                sum+=numbers[i][j];
+                j++;
+            }
+            i++;
+            j=0;
+        }
+        System.out.println("The summary of all numbers is "+sum);
+
+
+
     }
-}
-
-
-
-
-/*
-System.out.println("--------------------------------------");
-
-int i=0;
-int j=0;
-
-while ( i<numbers.length){
-   while (j<numbers[i].length){
-       sum+=numbers[i][j];
-       j++;
-   }
-    i++;
-    j=0;
-}
-System.out.println("The summary of all numbers is "+sum);
-
-
-
-    }
 
 
 }
-*/
+
+
+
+
+
+
+
+
+
+

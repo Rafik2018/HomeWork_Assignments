@@ -8,7 +8,7 @@ public class Project_Task10_Array_Second_LargestNum {
 
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int max1 = numbers[0];
-        int max2 = Integer.MIN_VALUE;
+        int max2 =Integer.MIN_VALUE;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] > max1) {
                 max2 = max1;

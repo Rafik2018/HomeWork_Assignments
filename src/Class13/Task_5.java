@@ -21,6 +21,19 @@ public class Task_5 {
        }
 
 
+        System.out.println("------------------------------------------------------------------------------");
+
+
+        String original = "rotator";
+        String reverse1 = new StringBuilder(original).reverse().toString();
+        if (original.equalsIgnoreCase(reverse1)) {
+            System.out.println("The string is a palindrome.");
+        } else {
+            System.out.println("The string is not a palindrome.");
+        }
+
+
+
 
 
 

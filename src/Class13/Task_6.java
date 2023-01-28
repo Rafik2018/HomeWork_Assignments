@@ -18,7 +18,7 @@ public class Task_6 {
        x=x.substring(y.length());
 
         System.out.println("swapping string x is "+x+" y is "+y);
-        System.out.println("swapping string y is" +y+" x is  "+x);
+        System.out.println("swapping string y is " +y+" x is  "+x);
 
 
 

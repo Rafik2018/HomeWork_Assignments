@@ -6,61 +6,64 @@ import java.util.Scanner;
 public class Task3 {
     public static void main(String[] args) {
 
-
-       /* Write a program that reads two people's first
+/*
+        3) Write a program that reads two people's first
         names and if they expecting boy or girl?
-                Based on the input suggests a name for a baby:
+        Based on the input suggests a name for a baby:
+
         Example Output:
         Mom’s first name? Mary
         Dad’s first name? Daniel
         Boy or Girl? boy
         Suggested baby name: DANRY
-*/
-       /* Scanner scanner = new Scanner(System.in);
+        Example Output:
+        Mom’s first name? Mary
+        Dad’s first name? Daniel
+        Boy or Girl? girl
+        Suggested baby name: MAIEL
+                */
 
-        System.out.println("Mom's first name?");
-        String momname = scanner.next();
-        System.out.println("Dad's first name?");
-        String dadname = scanner.next();
-        System.out.println("Boy or Girl?");
-        String gender = scanner.next();
-        String suggestedName = "";
 
-        if (gender.equalsIgnoreCase("girl")) {
-            suggestedName = dadname.substring(0, 1).toUpperCase() + momname.substring(1).toUpperCase();
-        } else if (gender.equalsIgnoreCase("boy")) {
-            suggestedName = momname.substring(0, 1).toUpperCase() + dadname.substring(1).toUpperCase();
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("What is the first name of the father?");
+        String dadName = input.nextLine();
+
+
+        System.out.println("What is the first name of the mother?");
+        String momName = input.nextLine();
+
+        System.out.println("Are you expecting a boy or a girl?");
+        String expectation = input.nextLine();
+
+
+        String firstHalf;
+        String secondHalf;
+        if (expectation.equalsIgnoreCase("girl")) {
+            firstHalf = dadName.substring(0, dadName.length() / 2);
+            secondHalf = momName.substring(momName.length() / 2);
         } else {
-            System.out.println(suggestedName + "Other Genders not acceptable");
+            firstHalf = momName.substring(0, momName.length() / 2);
+            secondHalf = dadName.substring(dadName.length() / 2);
         }
-        System.out.println("Suggested baby name " + suggestedName);
-*/
 
-
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Mom's first name?");
-        String momsName  = scanner.next();
-        System.out.println("Dad's first name?");
-        String dadsName = scanner.next();
-        System.out.println("Boy or Girl?");
-        String gender = scanner.next();
-        String suggestedName = "";
-
-         dadsName = "Zafar";
-         momsName = "Maryum";
-        String expectation = "girl";
-        String firstHalf = "";
-        String secondHalf = "";
-        if (expectation.equalsIgnoreCase("boy")) {
-            firstHalf = dadsName.substring(0, dadsName.length() / 2);
-            secondHalf = momsName.substring(momsName.length() / 2);
-
-        } else {
-            firstHalf = momsName.substring(0, momsName.length() / 2);
-            secondHalf = dadsName.substring(dadsName.length() / 2);
-        }
         System.out.println(firstHalf + secondHalf);
+
+        input.close();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
