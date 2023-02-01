@@ -6,7 +6,27 @@ public class Task3_vowels {
     Method should be available inside the class only where it was declared and executed by calling it is name.
     */
 
-private String vowels(String str){
+
+
+    private static String getOnlyVowels (String inputStr){
+        return inputStr.replaceAll("[^aeiou]","");
+
+
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(getOnlyVowels("Java"));
+
+
+
+
+
+
+
+
+
+     /*   private String vowels(String str){
 
     System.out.println(str.replaceAll("[^aeiou]",""));
     return str;
@@ -16,6 +36,11 @@ private String vowels(String str){
     public static void main(String[] args) {
     Task3_vowels tk = new Task3_vowels();
         System.out.println(tk.vowels("Assignment "));
+
+
+        */
+
+
 
 
     }

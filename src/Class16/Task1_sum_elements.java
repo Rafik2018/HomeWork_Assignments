@@ -1,5 +1,7 @@
 package Class16;
 
+import Class17.Task_3;
+
 public class Task1_sum_elements {
 
 /*
@@ -23,6 +25,7 @@ public class Task1_sum_elements {
         Task1_sum_elements task1 = new Task1_sum_elements();
 
         System.out.println(task1.sumArEl(arr));
+
 
 
     }
