@@ -12,7 +12,39 @@ public class Task_3 {
 
     */
 
-    String name;
+
+    private Task_3() {
+        System.out.println("Constructor without any parameters");
+    }
+
+    Task_3(String name) {
+        System.out.println("Constructor with a String as parameter");
+    }
+
+
+    protected Task_3(int number) {
+        System.out.println("Constructor with an int as parameter");
+    }
+
+
+    public Task_3(char c) {
+        System.out.println("Constructor with a char as parameter");
+    }
+
+    public static void main(String[] args) {
+        Task_3  task1 = new Task_3();
+        Task_3 task2 = new Task_3("Java");
+        Task_3 task3= new Task_3(1000);
+        Task_3 task4 = new Task_3('G');
+
+
+    }
+}
+
+
+
+
+  /*  String name;
     int sn ;
     String province;
     String cellNumber;
@@ -47,10 +79,7 @@ public class Task_3 {
 
     public static void main(String[] args) {
         Task_3 pI = new Task_3("Mike ",96547880," Ontario "," (416)345-6660");
-      pI.print();
-
-    }
-}
+      pI.print();*/
 
 
 
