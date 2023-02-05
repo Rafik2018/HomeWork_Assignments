@@ -38,7 +38,7 @@ class MathTeacher extends Teacher{
     String test;
 
     void  best (){
-        System.out.println("The Math class a best ");
+        System.out.println("The Math class is a best ");
     }
 
 }
@@ -49,7 +49,7 @@ class  MusicTeacher extends Teacher{
     String  popular;
 
     void  different (){
-        System.out.println("Music class is  very different ");
+        System.out.println("Music class is  very interesting ");
 
     }
 
