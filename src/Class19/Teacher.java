@@ -49,7 +49,7 @@ class  MusicTeacher extends Teacher{
     String  popular;
 
     void  different (){
-        System.out.println("Music class is  very interesting ");
+        System.out.println("Music class is  very interesting");
 
     }
 
