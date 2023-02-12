@@ -1,6 +1,6 @@
 package Class13;
 
-public class Task_2 {
+public class Task_2_Alphanumeric_characters_String_ {
 
 
     public static void main(String[] args) {

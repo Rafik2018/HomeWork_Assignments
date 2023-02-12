@@ -1,6 +1,6 @@
 package Class13;
 
-public class Task_3 {
+public class Task_3_how_many_sentences_in_String {
 
     public static void main(String[] args) {
 

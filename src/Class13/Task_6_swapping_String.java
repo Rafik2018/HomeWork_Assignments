@@ -1,6 +1,6 @@
 package Class13;
 
-public class Task_6 {
+public class Task_6_swapping_String {
 
 
     public static void main(String[] args) {

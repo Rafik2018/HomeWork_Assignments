@@ -1,6 +1,6 @@
 package Class13;
 
-public class Task_4 {
+public class Task_4_reverse_sentence {
     public static void main(String[] args) {
 
 

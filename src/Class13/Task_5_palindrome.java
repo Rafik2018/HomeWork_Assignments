@@ -1,6 +1,6 @@
 package Class13;
 
-public class Task_5 {
+public class Task_5_palindrome {
     public static void main(String[] args) {
 
 

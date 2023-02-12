@@ -1,6 +1,6 @@
 package Class13;
 
-public class Task_1 {
+public class Task_1_String_without_spaces {
 
     public static void main(String[] args) {
 
