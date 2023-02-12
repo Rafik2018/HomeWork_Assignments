@@ -9,18 +9,18 @@ public class Computer {
             Create objects of child classes and store them into array. Loop through each object and execute available methods.*/
 
 public void Hardware(){
-    System.out.println(" Processing on Intel and AMD processors.........Computer");
+    System.out.println(" Processor of Computers ");
 
 }
 
     void  Software(){
-        System.out.println("Operates on Windows and Linux 'Os'..........Computer");
+        System.out.println("Operation Systems of Computers");
 
     }
 
 
     void  Application(){
-        System.out.println("Accessible to the most applications..........Computer");
+        System.out.println("Accessible to the applications");
 
 
     }
