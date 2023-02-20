@@ -16,19 +16,21 @@ import java.util.ListIterator;
 
 */
 
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 
 abstract class Insurance {
-    protected String insuranceName;
+
+    public String insuranceName;
 
     public abstract void getQuote();
+
     public abstract void cancelInsurance();
 }
 
+
 class Car extends Insurance {
-    private String carModel;
+    public String carModel;
 
     public Car(String insuranceName, String carModel) {
         this.insuranceName = insuranceName;
@@ -36,18 +38,22 @@ class Car extends Insurance {
     }
 
     public void getQuote() {
-        System.out.println("AutoInsurance Quote is "+ 1000.00);
+        System.out.println("AutoInsurance Quote is " + 1000.00);
+    }
+
+    public String getModel() {
+        return carModel;
     }
 
     public void cancelInsurance() {
-        System.out.println("Car Model is"+carModel);
+
     }
+
 }
 
 
-
 class Pet extends Insurance {
-    private String petType;
+    public String petType;
 
     public Pet(String insuranceName, String petType) {
         this.insuranceName = insuranceName;
@@ -55,46 +61,55 @@ class Pet extends Insurance {
     }
 
     public void getQuote() {
-        System.out.println("PetInsurance Quote is "+ 500.00);
+        System.out.println("PetInsurance Quote is " + 500.00);
+    }
+
+    public String getPetType() {
+        return petType;
     }
 
     public void cancelInsurance() {
-        System.out.println("Pet Type is"+ petType);
+
     }
+
 }
 
 class Health extends Insurance {
-    public Health(String insuranceName) {
-        this.insuranceName = insuranceName;
+    public Health(String healthInsurance) {
+        super();
     }
 
+    @Override
     public void getQuote() {
-        System.out.println(0.00);
+        System.out.println("Quote is not available");
     }
 
+    @Override
     public void cancelInsurance() {
-        System.out.println("Health Insurance cancelled ");
+        System.out.println("Heath Insurance cancelled");
 
-        System.out.println("---------------------------------");
+        System.out.println("-----------------------------");
+
     }
-
-
-
-
 
 
     public static void main(String[] args) {
+
         ArrayList<Insurance> insuranceList = new ArrayList<>();
-        insuranceList.add(new Car("Car Insurance", " Honda Civic"));
+        insuranceList.add(new Car("Car Insurance", " Toyota"));
         insuranceList.add(new Pet("Pet Insurance", " Dog"));
         insuranceList.add(new Health("Health Insurance"));
 
         for (Insurance insurance : insuranceList) {
             insurance.getQuote();
             insurance.cancelInsurance();
+            if (insurance instanceof Car) {
+                System.out.println("Car model is " + ((Car) insurance).getModel());
+            } else if (insurance instanceof Pet) {
+                System.out.println("Pet type is " + ((Pet) insurance).getPetType());
 
+            }
         }
-
         LinkedList<Card> cardList = new LinkedList<>();
         cardList.add(new Card("Visa", 12.5));
         cardList.add(new Card("MasterCard", 11.75));
@@ -105,7 +120,9 @@ class Health extends Insurance {
             System.out.println("Interest rate: " + card.getInterestRate());
         }
     }
+
 }
+
 
 class Card {
     private String cardType;
