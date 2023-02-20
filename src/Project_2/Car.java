@@ -14,38 +14,145 @@ public abstract class Car {
     feet then returned car price should include 5% discount, otherwise 10% discount
 
  */
-/*
 
-  double carPrice;
-  String color;
+    /*double carPrice;
+    String color;
 
-    abstract double getCarPrice();
+    abstract double calculateSalesPrice();
 
-    Car(double carPrice,String color){
-        this.carPrice=carPrice;
+    Car(double carPrice) {
+        this.carPrice = carPrice;
 
     }
 
+    class Sedan extends Car {
+        double length;
 
-class Sedan extends Car {
-    double length;
+        Sedan(double carPrice, double length) {
+            super(carPrice);
+            this.length = length;
+        }
 
-    Sedan(double carPrice, String color, double length) {
-        super(carPrice, color);
-        this.length = length;
-    }
+        @Override
+        double calculateSalesPrice() {
+            if (length > 20) {
+                return carPrice * 0.95;
+            } else {
+                return carPrice * 0.9;
+            }
+        }
+
+     class Truck extends Car {
+            double weight;
+
+            Truck(double carPrice, double weight) {
+                super(carPrice);
+                this.weight = weight;
+            }
+
+            @Override
+            double calculateSalesPrice() {
+                if (weight > 2000) {
+                    return carPrice * 0.9;
+                } else {
+                    return carPrice * 0.8;
+                }
+            }
 
 
-   */
-/* @Override
-    double getCarPrice() {
-        if (length > 20) {
-            // return carPrice-5%;
-            //   }
 
 
+
+     */
+
+
+        double carPrice;
+        String color;
+        abstract double calculateSalePrice();
+        Car(double carPrice){
+            this.carPrice=carPrice;
         }
     }
-}
-]*/
-}
+    class Sedan extends Car{
+        double length;
+
+        Sedan(double carPrice,double length) {
+            super(carPrice);
+            this.length=length;
+        }
+        @Override
+        double calculateSalePrice() {
+            if(length>20){return carPrice*0.95;}
+            else{return carPrice*0.9;}
+        }
+    }
+    class Truck extends Car{
+        double weight;
+        Truck(double carPrice,double weight) {
+            super(carPrice);
+            this.weight=weight;
+        }
+
+        @Override
+        double calculateSalePrice() {
+            if(weight>2000){return carPrice*0.9;}
+            else {return carPrice*0.8;}
+        }
+    }
+    class CarTester{
+        public static void main(String[] args) {
+            Car[]cars={new Sedan(55000,16),new Truck(77000,2200)};
+            for(Car car:cars){
+                System.out.println(car.getClass().getSimpleName() + " SalePrice");
+                System.out.println(car.calculateSalePrice());
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
