@@ -22,21 +22,15 @@ public class ArrayList_isEmpty {
         names.add("Anna");
 
 
-        //    Find out whether the given ArrayList is empty or not?
-        System.out.println("The ArrayList is not empty:  " + names.isEmpty());
+        System.out.println(names.isEmpty());
+        System.out.println(names.contains("John"));
+        System.out.println(names.size());
+        System.out.println(names);
 
-        //   Check whether the specific name is present in an ArrayList or not?
-        System.out.println("The specific name John is present in ArrayList:  " + names.contains("John"));
-
-        //  Find the size of your arrayList and print all values from that
-        int size = names.size();
-        System.out.println("The size of the ArrayList is: " + size);
-        for (String value : names) {
-            System.out.println(value);
 
         }
     }
-}
+
 
 
 
