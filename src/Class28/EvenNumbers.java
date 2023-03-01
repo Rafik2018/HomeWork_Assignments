@@ -22,7 +22,7 @@ public class EvenNumbers {
             }
         }
         for (int number : evenNumbers) {
-            System.out.print(number);
+            System.out.println(number);
         }
 
     }
